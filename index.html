@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--- <link href="js/jquery.mobile-1.4.2.min.css" rel="stylesheet" type="text/css" /> -->
+		<link rel="stylesheet" href="css/themes/daud.min.css" />
+		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.2.min.css" />
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+<!-- page 1 -->
+<div data-role="page" id="ms1">
+	<!-- header -->
+	<div data-role="header" data-position="fixed">
+		<h1>WEB MOBILE DAUD</h1> 
+	</div>
+	<!-- /header -->
+	<!-- content -->
+	<div role="main" class="ui-content">
+		<h3>Tajuk</h3>
+		<p>GAMBAR JENG JENG</p>
+		<img src="img/kebal.jpg" />
+		<p>Ini button navigasi
+		<a href="#ms2" class="ui-btn" data-transition="slideup">Laman Kedua</a>
+		<a href="#ms3" class="ui-btn" data-transition="turn">Laman Ke3</a>
+		</p>
+		
+	</div>
+	<!-- /content -->
+	<!-- footer -->
+	<div data-role="footer" data-position="fixed">
+	</div>
+<!-- /page -->
+
+		<div data-role="navbar">
+			<ul>
+				<li><a data-icon="home" class="ui-btn-active ui-state-persist">ms1</a></li>
+				<li><a data-icon="star" href="#ms2" data-transition="flip">ms2</a></li>
+				<li><a data-icon="alert" href="#ms3" data-transition="flip">ms3</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page -->
+
+
+<!-- page 2 -->
+<div data-role="page" id="MS2">
+	<!-- header -->
+	<div data-role="header" data-position="fixed">
+		<h1>PESERTA</h1>
+	</div>
+	<!-- /header -->
+
+	<!-- content -->
+	<div role="main" class="ui-content">
+		
+		<h3>Senarai Peserta Kursus</h3>
+		<!-- kpln list -->
+		<ul data-role="listview" data-inset="true">
+			<li>
+				<a href="#pop1" data-rel="popup">
+				<img src="img/1.jpg" width="150" />
+				<h3>BM TLS SAlI</h3>
+				<p>Bintara Senggaraan</p>
+				</a>
+			</li>	
+			<li>
+				<a href="#pop2" data-rel="popup">
+				<img src="img/2.jpg" width="150" />
+				<h3>BM TLS Hafiz</h3>
+				<p>Bintara Senggaraan It PUSMAS</p>
+				</a>
+			</li>
+			<li>
+				<a href="#pop3" data-rel="popup">
+				<img src="img/3.jpg" width="150" />
+				<h3>LK I TLR DAUd</h3>
+				<p>STaf Web</p>
+				</a>
+			</li>
+		</ul>
+		<!-- kpln popup utk setiap list -->
+		<div data-role="popup" id="pop1"style="max-width:400px;">
+			<ul data-role="listview">
+				<li>
+				<a href="tel:+0125461466" class="ui-btn ui-btn-icon-left ui-icon-phone">Call</a>
+				</li>
+				<li><a href="sms://+60125461466"class="ui-btn ui-btn-icon-left ui-icon-edit">SMS</a>
+				</li>
+				<li><a href="mailto:abudaud@navy.mil.my"class="ui-btn ui-btn-icon-left ui-icon-mail">Email</a>
+				</li>
+			</ul>
+		</div>	
+		<!-- kpln popup utk setiap list -->
+		<div data-role="popup" id="pop2"style="max-width:400px;">
+			<ul data-role="listview">
+				<li>
+				<a href="tel:+0125461466" class="ui-btn ui-btn-icon-left ui-icon-phone">Call</a>
+				</li>
+				<li><a href="sms://+60125461466"class="ui-btn ui-btn-icon-left ui-icon-edit">SMS</a>
+				</li>
+				<li><a href="mailto:abudaud@navy.mil.my"class="ui-btn ui-btn-icon-left ui-icon-mail">Email</a>
+				</li>
+			</ul>
+		</div>	
+		<!-- kpln popup utk setiap list -->
+		<div data-role="popup" id="pop3"style="max-width:400px;">
+			<ul data-role="listview">
+				<li>
+				<a href="tel:+0125461466" class="ui-btn ui-btn-icon-left ui-icon-phone">Call</a>
+
+				</li>
+				<li><a href="sms://+60125461466"class="ui-btn ui-btn-icon-left ui-icon-edit">SMS</a>
+
+				</li>
+				<li><a href="mailto:abudaud@navy.mil.my"class="ui-btn ui-btn-icon-left ui-icon-mail">Email</a>
+
+				</li>
+
+			</ul>
+		</div>	
+		
+		<h3>Page2</h3>
+		<a href="#pg1" class="ui-btn">Laman Utama</a>
+		<a href="#pg3" class="ui-btn">Laman Ketiga</a>
+		
+		
+	</div>
+	<!-- /content -->
+
+	<!-- footer -->
+	<div data-role="footer">
+		<h4>Page Footer 2</h4>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page -->
+<!-- page 3 -->
+<div data-role="page" id="ms3">
+	<!-- header -->
+	<div data-role="header">
+		<h1>Berita Jeng Jeng</h1>
+	</div>
+	<!-- /header -->
+
+	<!-- content -->
+	<div role="main" class="ui-content">
+		<h3>Tajuk</h3>
+		
+		<p>GAMBAR JENG JENG</p>
+		<img src="img/kebal.jpg" width="80%" 
+		style="display : block; margin : 0 auto;"/>
+		<p style="text-align : justify;">
+		Dalam kerjaya Tentera Laut beliau sepanjang hampir 38 tahun, beliau telah memegang pelbagai jawatan di kapal dan pangkalan. Beliau pernah berkhidmat di atas kapal Tentera Laut British di Hong Kong dan kapal Tentera Laut Itali di Itali. Beliau turut menerima pendedahan dalam pelbagai latihan dan kursus yang dijalankan di luar negara termasuk dengan Pasukan SEAL Amerika Syarikat, SAS Australia, Komando Marin Diraja United Kingdom dan Pasukan Khas Laut Perancis.  Beliau juga telah ditugaskan sebagai Ketua Staf untuk Misi Negara-negara Bersatu di Sahara Barat pada tahun 2004. Selepas dinaikkan pangkat ke Laksamana Pertama pada tahun 2006, beliau telah dilantik sebagai Asisten Ketua Staf Komunikasi dan Elektronik Markas Angkatan Tentera Malaysia.  Seterusnya beliau telah menghadiri Pengajian Pertahanan dan Strategik di Universiti Pertahanan Kebangsaan China di Beijing mulai September 2009 sehingga September 2010.  Sekembalinya dari China, beliau telah dinaikkan pangkat ke Laksamana Muda pada 1 September 2010 dan seterusnya dilantik sebagai Asisten Ketua Staf J3, Markas Angkatan Bersama pada 7 Spetember 2010.  Seterusnya beliau telah dinaikkan pangkat ke Laksamana Madya pada 19 September 2013.
+		</p>
+		<p>Button Balik Le
+		<a href="#pg1" class="ui-btn">Laman Utama</a>
+		<a href="#pg2" class="ui-btn">Balik Le</a>
+		</p>
+		
+	</div>
+	<!-- /content -->
+
+	<!-- footer -->
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+	<!-- /footer -->
+
+
+</body>
+
+</html>
